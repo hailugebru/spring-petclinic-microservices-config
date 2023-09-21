@@ -11,7 +11,7 @@ spring:
   datasource:
     url: jdbc:mysql://mysql-petclinic-2092c5.mysql.database.azure.com:3306/petclinic?useSSL=true
     username: myadmin
-    password: myadminpassword963
+    password: ${GIT_PAT}
   sql:
     init:
       schema-locations: classpath*:db/mysql/schema.sql
